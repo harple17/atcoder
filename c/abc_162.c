@@ -20,5 +20,5 @@ int main () {
     }
     printf("%d",s);
     return 0;
-    /*test*/
+    /*test is done*/
 }
