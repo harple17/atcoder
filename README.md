@@ -1,2 +1,2 @@
-# cp
- competitive programming
+# AtCoder
+this repo is for atcoder
