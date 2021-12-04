@@ -1,4 +1,36 @@
-#include <bits/stdc++.h>
+//include libraries
+#include <algorithm>
+#include <bitset>
+#include <complex>
+#include <deque>
+#include <exception>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <ios>
+#include <iosfwd>
+#include <iostream>
+#include <istream>
+#include <iterator>
+#include <limits>
+#include <list>
+#include <locale>
+#include <map>
+#include <memory>
+#include <new>
+#include <numeric>
+#include <ostream>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <stdexcept>
+#include <streambuf>
+#include <valarray>
+#include <string>
+#include <typeinfo>
+#include <utility>
+#include <vector>
 using namespace std;
 #define rep(i,n) for (int i=0; i < (n); i++)
 using ll = long long;
@@ -27,9 +59,9 @@ int main() {
         c[i]--; //to 0-indexed
     }
 
-    //breadth-first search
+    //depth-first search
     const int INF = 1000000001;
-    auto bfs = [&](int sv) { //start vertex
+    auto dfs = [&](int sv) { //start vertex
         vector<int> dist(n, INF);
         queue<int> q;
         dist[sv] = 0;
@@ -48,7 +80,7 @@ int main() {
 
     vector<vector<int>> dist(k, vector<int>(k));
     rep(i,k) {
-        vector<int> d = bfs(c[i]); //shortest distances from c[i] to all of v that c[i] can go to. 
+        vector<int> d = dfs(c[i]); //shortest distances from c[i] to all of v that c[i] can go to. 
         rep(j,k) dist[i][j] = d[c[j]]; //shortest distances from c[i] to c[j]
     }
 

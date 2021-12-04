@@ -3,6 +3,24 @@
         "ostream": "cpp",
         "utility": "cpp",
         "memory": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "cmath": "cpp",
+        "vector": "cpp",
+        "queue": "cpp",
+        "iostream": "cpp",
+        "deque": "cpp",
+        "algorithm": "cpp",
+        "map": "cpp",
+        "new": "cpp",
+        "locale": "cpp",
+        "xlocale": "cpp",
+        "xlocmes": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xloctime": "cpp",
+        "numeric": "cpp",
+        "xtree": "cpp",
+        "cstdlib": "cpp",
+        "xutility": "cpp"
     }
 }
