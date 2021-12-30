@@ -34,8 +34,7 @@
 using namespace std;
 #define rep(i, n) for (int i=0; i < (n); i++)
 #define rep1(i, n, w) for (int i=0; i < (n); i+=j)
-#define rep2(i, n, w) for (int i=(n); i > 0; i-=j)
-#define rep3(i, s, e, j) for (int i=s; i < (e); i += j)
+#define rep2(i, s, e, w) for (int i=s; i < (e); i += w)
 using ll = long long;
 using P = pair<int, int>;
 
