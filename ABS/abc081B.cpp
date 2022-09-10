@@ -37,8 +37,26 @@ using namespace std;
 #define rep2(i, s, e, w) for (int i=s; i < (e); i += w)
 using ll = long long;
 using P = pair<int, int>;
+#define M 32
+#define INF 33
 
 int main() {
-    
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    rep(i, n) cin >> a[i];
+    vector<int> p(M);
+    p[0] = 1;
+    rep(i, M-1) p[i+1] = 2 * p[i];
+
+    int ans = INF;
+  	int cand = 0;
+    rep(i, n) {
+      	rep(j, M) {
+        	if (a[i] % p[j] == 0) cand = j;
+    	}
+  		if (ans > cand) ans = cand;
+    }
+    cout << ans << endl;
     return 0;
 }
